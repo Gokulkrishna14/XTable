@@ -24,7 +24,7 @@ export default function Table(){
     const handleClick= (filerCondition) => {
         let sortedData = [...data];
         if(filerCondition === "date"){
-            sortedData.sort((a,b) => new Date(a.date) - new Date(b.date));
+            sortedData.sort((a,b) => new Date(b.date) - new Date(a.date));
 
         }else if(filerCondition === "views"){
             sortedData.sort((a,b) => b.views - a.views);
